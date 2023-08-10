@@ -1,9 +1,9 @@
 #include <unistd.h>
 #include <stdio.h>
 /**
- * main - start for a a C program that prints a line
+ * main - start for the program that prints a line
  *
- * Retuen: 1 (successful program)
+ * Return: 1 (successful program)
  */
 int main(void)
 {
