@@ -5,16 +5,19 @@
  */
 int main(void)
 {
-	int x;
+	int x = 1;
 	int y = 0;
 
-	for (x = 0; x < 1024; x++)
+	while (x < 1024)
 	{
-		if (x % 3 == 0 || x % 5 == 0)
-		{
-			x += y;
-		}
+		if (x % 3 == 0)
+			y += x;
+		else if (x % 5 == 0)
+			y += x;
+
+		x++;
 	}
 	printf("%d\n", y);
+
 	return (0);
 }
