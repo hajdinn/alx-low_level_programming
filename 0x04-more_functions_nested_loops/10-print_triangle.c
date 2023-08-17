@@ -1,30 +1,28 @@
 #include "main.h"
 /**
- * print_triangle - start program to print triaangle
- * @size: sixe of triangle
- * Return: void
- */
+*print_triangle - prints a triangle
+*@size: size parameter of triangle
+*Return: void
+*/
 void print_triangle(int size)
 {
-	int x;
-	int y;
-	int z;
+int inc1, inc2;
 
-	for (size <= 0)
-	{
-	_putchar('\n');
-	}
-	else
-	{
-	for (x = 1; x <= size; x++)
-	{
-	for (y = size - x; y > 0; y--)
-	{
-	_putchar(' ');
-	}
-	for (z = 0; z < x; z++);
-	}
-	_putchar('#');
-	}
-	_putchar('\n');
+if (size > 0)
+{
+for (inc1 = 1; inc1 <= size; inc1++)
+{
+for ((inc2 = size - inc1); inc2 > 0; inc2--)
+_putchar(' ');
+
+for (inc2 = 0; inc2 < inc1; inc2++)
+_putchar('#');
+
+if (inc1 == size)
+continue;
+
+_putchar('\n');
+}
+}
+_putchar('\n');
 }
