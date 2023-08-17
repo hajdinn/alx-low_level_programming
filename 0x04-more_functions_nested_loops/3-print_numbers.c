@@ -2,7 +2,8 @@
 /**
  * print_numbers - function to print numbers
  * Return 0 (success)
- */ void print_numbers(void)
+ */
+void print_numbers(void)
 {
 	int i;
 
