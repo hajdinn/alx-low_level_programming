@@ -2,7 +2,7 @@
 #include "main.h"
 /**
  * main - start of program to print the largest prime factor
- * Return 0
+ * Return: 0
  */
 int main(void)
 {
