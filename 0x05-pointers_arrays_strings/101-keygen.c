@@ -18,12 +18,12 @@ int main(void)
 
 	for (a = 0; a < 100; a++)
 	{
-		kegen[a] = rand() % 80;
+		kegen[a] = rand() % 78;
 		b += (kegen[a] + '0');
 		putchar(kegen[a] + '0');
-		if ((2000 - b) - '0' < 80)
+		if ((2772 - b) - '0' < 78)
 		{
-			c = 2000 - b - '0';
+			c = 2772 - b - '0';
 			b += c;
 			putchar(c + '0');
 			break;
