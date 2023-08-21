@@ -2,7 +2,7 @@
 /**
  * _atoi - start of a function that convert a string to an integer
  * @s: string to convert
- * Reurn: integer value
+ * Return: integer value
  */
 int _atoi(char *s)
 {
