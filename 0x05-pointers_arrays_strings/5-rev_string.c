@@ -2,17 +2,28 @@
 /**
  * rev_string - start of function that reverse string
  * @s: pointer string to print
- * Return: void
+ * Return: reverse string
  */
 void rev_string(char *s)
 {
+	int w;
 	int x;
-	char y;
+	int y;
+	char t;
 
-	for (x = 0; x < (s[x]) / 2; x++)
+	x = 0;
+	y = 0;
+
+	while (s[x] != '\0')
 	{
-		y = s[x];
-		s[x] = s[(x) - x - 1];
-		s[(x) - x - 1] = y;
+		x++;
+	}
+	y = x - 1;
+
+	for (w = 0; w < x / 2; w++)
+	{
+		t = s[w];
+		s[w] = s[y];
+		s[y--] = t;
 	}
 }
