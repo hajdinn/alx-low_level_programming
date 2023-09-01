@@ -1,4 +1,5 @@
 #include "main.h"
+#define unused(x) (void)(x)
 #include <stdio.h>
 /**
  * main - start of function that print name of program
