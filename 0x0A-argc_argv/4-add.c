@@ -1,15 +1,18 @@
 #include <ctype.h>
+#include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
 #define unused(x) (void)(x)
 /**
- * check_num - string to check
+ * check_sum - string to check
  * @s: string array
  * Return: 0
  */
-int check_num(char *s)
+int check_sum(char *s)
 {
 	int x = 0;
 
-	for (; s[x] != '\0'; x++)
+	for (x = 0; s[x] != '\0'; x++)
 	{
 		if (!isdigit(s[x]))
 		{
@@ -29,7 +32,7 @@ int main(int argc, char *argv[])
 	int x;
 	int sum = 0;
 
-	if (argv > 1)
+	if (argc > 1)
 	{
 		for (x = 1; x < argc; x++)
 		{
