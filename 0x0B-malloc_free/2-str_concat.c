@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * *str_concat – start of function to concatenates two string
+ * str_concat - start of function to concat two string
  * @s1: first input to concatenate
  * @s2: second input to concatenate
  * Return: conc
